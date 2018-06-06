@@ -13,6 +13,7 @@
 		11B3B03820C7C0100050C420 /* SYProgressHUD+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B03120C7C0100050C420 /* SYProgressHUD+Function.m */; };
 		11B3B03920C7C0100050C420 /* SYProgressHUD+TouchHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B03220C7C0100050C420 /* SYProgressHUD+TouchHandle.m */; };
 		11B3B03A20C7C0100050C420 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B03420C7C0100050C420 /* SVIndefiniteAnimatedView.m */; };
+		11B3B03D20C7C22F0050C420 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B3B03C20C7C22F0050C420 /* UIKit.framework */; };
 		1819E1BC20C7BE5500E4CFDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819E1BB20C7BE5500E4CFDA /* AppDelegate.m */; };
 		1819E1BF20C7BE5500E4CFDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819E1BE20C7BE5500E4CFDA /* ViewController.m */; };
 		1819E1C220C7BE5500E4CFDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1819E1C020C7BE5500E4CFDA /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		11B3B03220C7C0100050C420 /* SYProgressHUD+TouchHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SYProgressHUD+TouchHandle.m"; sourceTree = "<group>"; };
 		11B3B03320C7C0100050C420 /* SYProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYProgressHUD.h; sourceTree = "<group>"; };
 		11B3B03420C7C0100050C420 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		11B3B03C20C7C22F0050C420 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1819E1B720C7BE5500E4CFDA /* SYLoadingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYLoadingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1819E1BA20C7BE5500E4CFDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1819E1BB20C7BE5500E4CFDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B3B03D20C7C22F0050C420 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,11 +77,20 @@
 			path = SYLoadingView;
 			sourceTree = "<group>";
 		};
+		11B3B03B20C7C22F0050C420 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11B3B03C20C7C22F0050C420 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1819E1AE20C7BE5500E4CFDA = {
 			isa = PBXGroup;
 			children = (
 				1819E1B920C7BE5500E4CFDA /* SYLoadingView */,
 				1819E1B820C7BE5500E4CFDA /* Products */,
+				11B3B03B20C7C22F0050C420 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

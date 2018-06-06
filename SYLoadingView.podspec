@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+  s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SYLoadingView/*.{h,m}"
+  s.source_files  = "SYLoadingView/SYLoadingView/*.{h,m}"
   #s.public_header_files = "SYLoadingView/SYLoadingView/UIView+Loading.h"
   
   #s.exclude_files = "Classes/Exclude"
@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+#s.framework  = "UIKit"
   s.frameworks = "UIKit", "Foundation"
 
   # s.library   = "iconv"
