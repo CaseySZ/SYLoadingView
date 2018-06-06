@@ -71,7 +71,7 @@
 
 + (void)dismissLoadingWithDelay:(NSTimeInterval)delay complete:(SYHUDDismissCompletion)block {
    
-    [[SYProgressHUD sharedView] dismissLoadingWithDelay:delay complete:block];
+    [[SYProgressHUD sharedView] dismissDelay:delay finishBlock:block];
 }
 
 @end
