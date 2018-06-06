@@ -1,2 +1,2 @@
 # SYLoadingView
-缓冲加载
+加载控件
