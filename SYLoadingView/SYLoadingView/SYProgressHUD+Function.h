@@ -22,7 +22,6 @@
 - (void)showErrorStatus:(NSString*)errorMsg;
 
 - (void)dismiss;
-- (void)dismissLoadingWithDelay:(NSTimeInterval)delay;
 - (void)dismissLoadingWithDelay:(NSTimeInterval)delay complete:(SYHUDDismissCompletion)block;
 
 

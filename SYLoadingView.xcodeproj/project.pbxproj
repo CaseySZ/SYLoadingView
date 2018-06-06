@@ -59,17 +59,17 @@
 		11B3B02920C7C0100050C420 /* SYLoadingView */ = {
 			isa = PBXGroup;
 			children = (
-				11B3B02A20C7C0100050C420 /* UIView+Loading.h */,
-				11B3B02B20C7C0100050C420 /* SYProgressHUD+Function.h */,
 				11B3B02C20C7C0100050C420 /* SVIndefiniteAnimatedView.h */,
-				11B3B02D20C7C0100050C420 /* SYProgressHUD.m */,
-				11B3B02E20C7C0100050C420 /* SYProgressHUD+TouchHandle.h */,
-				11B3B02F20C7C0100050C420 /* UIView+Loading.m */,
-				11B3B03020C7C0100050C420 /* SYHUD.bundle */,
-				11B3B03120C7C0100050C420 /* SYProgressHUD+Function.m */,
-				11B3B03220C7C0100050C420 /* SYProgressHUD+TouchHandle.m */,
-				11B3B03320C7C0100050C420 /* SYProgressHUD.h */,
 				11B3B03420C7C0100050C420 /* SVIndefiniteAnimatedView.m */,
+				11B3B03020C7C0100050C420 /* SYHUD.bundle */,
+				11B3B03320C7C0100050C420 /* SYProgressHUD.h */,
+				11B3B02D20C7C0100050C420 /* SYProgressHUD.m */,
+				11B3B02B20C7C0100050C420 /* SYProgressHUD+Function.h */,
+				11B3B03120C7C0100050C420 /* SYProgressHUD+Function.m */,
+				11B3B02E20C7C0100050C420 /* SYProgressHUD+TouchHandle.h */,
+				11B3B03220C7C0100050C420 /* SYProgressHUD+TouchHandle.m */,
+				11B3B02A20C7C0100050C420 /* UIView+Loading.h */,
+				11B3B02F20C7C0100050C420 /* UIView+Loading.m */,
 			);
 			path = SYLoadingView;
 			sourceTree = "<group>";
