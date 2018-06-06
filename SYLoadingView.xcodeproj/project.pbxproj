@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B3B03520C7C0100050C420 /* SYProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B02D20C7C0100050C420 /* SYProgressHUD.m */; };
+		11B3B03620C7C0100050C420 /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B02F20C7C0100050C420 /* UIView+Loading.m */; };
+		11B3B03720C7C0100050C420 /* SYHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 11B3B03020C7C0100050C420 /* SYHUD.bundle */; };
+		11B3B03820C7C0100050C420 /* SYProgressHUD+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B03120C7C0100050C420 /* SYProgressHUD+Function.m */; };
+		11B3B03920C7C0100050C420 /* SYProgressHUD+TouchHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B03220C7C0100050C420 /* SYProgressHUD+TouchHandle.m */; };
+		11B3B03A20C7C0100050C420 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B3B03420C7C0100050C420 /* SVIndefiniteAnimatedView.m */; };
 		1819E1BC20C7BE5500E4CFDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819E1BB20C7BE5500E4CFDA /* AppDelegate.m */; };
 		1819E1BF20C7BE5500E4CFDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819E1BE20C7BE5500E4CFDA /* ViewController.m */; };
 		1819E1C220C7BE5500E4CFDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1819E1C020C7BE5500E4CFDA /* Main.storyboard */; };
@@ -16,6 +22,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11B3B02A20C7C0100050C420 /* UIView+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Loading.h"; sourceTree = "<group>"; };
+		11B3B02B20C7C0100050C420 /* SYProgressHUD+Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SYProgressHUD+Function.h"; sourceTree = "<group>"; };
+		11B3B02C20C7C0100050C420 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		11B3B02D20C7C0100050C420 /* SYProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYProgressHUD.m; sourceTree = "<group>"; };
+		11B3B02E20C7C0100050C420 /* SYProgressHUD+TouchHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SYProgressHUD+TouchHandle.h"; sourceTree = "<group>"; };
+		11B3B02F20C7C0100050C420 /* UIView+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Loading.m"; sourceTree = "<group>"; };
+		11B3B03020C7C0100050C420 /* SYHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SYHUD.bundle; sourceTree = "<group>"; };
+		11B3B03120C7C0100050C420 /* SYProgressHUD+Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SYProgressHUD+Function.m"; sourceTree = "<group>"; };
+		11B3B03220C7C0100050C420 /* SYProgressHUD+TouchHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SYProgressHUD+TouchHandle.m"; sourceTree = "<group>"; };
+		11B3B03320C7C0100050C420 /* SYProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYProgressHUD.h; sourceTree = "<group>"; };
+		11B3B03420C7C0100050C420 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		1819E1B720C7BE5500E4CFDA /* SYLoadingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYLoadingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1819E1BA20C7BE5500E4CFDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1819E1BB20C7BE5500E4CFDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +56,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11B3B02920C7C0100050C420 /* SYLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				11B3B02A20C7C0100050C420 /* UIView+Loading.h */,
+				11B3B02B20C7C0100050C420 /* SYProgressHUD+Function.h */,
+				11B3B02C20C7C0100050C420 /* SVIndefiniteAnimatedView.h */,
+				11B3B02D20C7C0100050C420 /* SYProgressHUD.m */,
+				11B3B02E20C7C0100050C420 /* SYProgressHUD+TouchHandle.h */,
+				11B3B02F20C7C0100050C420 /* UIView+Loading.m */,
+				11B3B03020C7C0100050C420 /* SYHUD.bundle */,
+				11B3B03120C7C0100050C420 /* SYProgressHUD+Function.m */,
+				11B3B03220C7C0100050C420 /* SYProgressHUD+TouchHandle.m */,
+				11B3B03320C7C0100050C420 /* SYProgressHUD.h */,
+				11B3B03420C7C0100050C420 /* SVIndefiniteAnimatedView.m */,
+			);
+			path = SYLoadingView;
+			sourceTree = "<group>";
+		};
 		1819E1AE20C7BE5500E4CFDA = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +93,7 @@
 		1819E1B920C7BE5500E4CFDA /* SYLoadingView */ = {
 			isa = PBXGroup;
 			children = (
+				11B3B02920C7C0100050C420 /* SYLoadingView */,
 				1819E1BA20C7BE5500E4CFDA /* AppDelegate.h */,
 				1819E1BB20C7BE5500E4CFDA /* AppDelegate.m */,
 				1819E1BD20C7BE5500E4CFDA /* ViewController.h */,
@@ -130,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1819E1C720C7BE5500E4CFDA /* LaunchScreen.storyboard in Resources */,
+				11B3B03720C7C0100050C420 /* SYHUD.bundle in Resources */,
 				1819E1C420C7BE5500E4CFDA /* Assets.xcassets in Resources */,
 				1819E1C220C7BE5500E4CFDA /* Main.storyboard in Resources */,
 			);
@@ -142,8 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B3B03920C7C0100050C420 /* SYProgressHUD+TouchHandle.m in Sources */,
+				11B3B03520C7C0100050C420 /* SYProgressHUD.m in Sources */,
 				1819E1BF20C7BE5500E4CFDA /* ViewController.m in Sources */,
+				11B3B03A20C7C0100050C420 /* SVIndefiniteAnimatedView.m in Sources */,
 				1819E1CA20C7BE5500E4CFDA /* main.m in Sources */,
+				11B3B03620C7C0100050C420 /* UIView+Loading.m in Sources */,
+				11B3B03820C7C0100050C420 /* SYProgressHUD+Function.m in Sources */,
 				1819E1BC20C7BE5500E4CFDA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
