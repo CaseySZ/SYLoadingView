@@ -8,7 +8,7 @@
 
 #import "SYProgressHUD+Function.h"
 
-static NSInteger successDefaultDuration = 1.5;
+static NSInteger successDefaultDuration = 1;
 static NSInteger errorDefaultDuration = 2;
 
 @implementation SYProgressHUD (Function)
@@ -85,7 +85,11 @@ static NSInteger errorDefaultDuration = 2;
         [self updateViewHierarchy:style];
         [self updateHUDFrame:style];
         
+        self.hudView.transform = self.hudView.transform = CGAffineTransformScale(self.hudView.transform, 1/1.5f, 1/1.5f);
+        
         [UIView animateWithDuration:0.15 animations:^{
+    
+            self.hudView.transform = CGAffineTransformIdentity;
             [self fadeInAnimationAction];
         } completion:^(BOOL finished) {
             
@@ -118,7 +122,7 @@ static NSInteger errorDefaultDuration = 2;
     self.fadeOutTimer = nil;
     self.finishBlock = nil;
     
-    [self dismissDelay:0 finishBlock:block];
+    [self dismissLoadingWithDelay:0 complete:block];
     
 }
 
@@ -141,18 +145,16 @@ static NSInteger errorDefaultDuration = 2;
 
 - (void)dismiss{
     
-    [self dismissDelay:0 finishBlock:nil];
+    [self dismissLoadingWithDelay:0];
     
 }
 
-
-- (void)dismissWithBlock:(SYHUDDismissCompletion)block{
+- (void)dismissLoadingWithDelay:(NSTimeInterval)delay{
     
-    [self dismissDelay:0 finishBlock:block];
-    
+    [self dismissLoadingWithDelay:delay complete:nil];
 }
 
-- (void)dismissDelay:(NSTimeInterval)duration finishBlock:(SYHUDDismissCompletion)block{
+- (void)dismissLoadingWithDelay:(NSTimeInterval)duration complete:(SYHUDDismissCompletion)block{
     
     if (duration > 0) {
         
@@ -162,16 +164,22 @@ static NSInteger errorDefaultDuration = 2;
         
         dispatch_async(dispatch_get_main_queue(), ^{
             
+            
             [UIView animateWithDuration:0.15 animations:^{
                 
+                self.hudView.transform = CGAffineTransformScale(self.hudView.transform, 1/1.3f, 1/1.3f);
                 [self fadeOutAnimationAction];
                 
             } completion:^(BOOL finished) {
                 
                 [self fadeOutOperation];
+                self.hudView.transform = CGAffineTransformIdentity;
+                
                 if (block) {
                     block();
                 }
+                
+                
             }];
         });
     }

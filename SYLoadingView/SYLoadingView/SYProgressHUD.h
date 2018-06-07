@@ -22,11 +22,14 @@ typedef void (^SYHUDDismissCompletion)(void);
 
 //containView默认是window上
 @property (nonatomic, strong)UIView *containView;
+@property (nonatomic, readonly)UIWindow *frontWindow;
+
 @property (nonatomic, assign)BOOL userInteraction;
 
 @property (nonatomic, strong)UILabel *statusLabel;
 @property (nonatomic, strong)UIImageView *imageView;
 @property (nonatomic, strong)UIView *whiteViewHUDBg;
+@property (nonatomic, strong)UIVisualEffectView *hudView;
 
 
 @property (nonatomic, strong) UIImage *errorImage;
