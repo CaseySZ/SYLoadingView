@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "SYProgressHUD+Function.h"
 #import "UIView+Loading.h"
 
 @interface ViewController (){

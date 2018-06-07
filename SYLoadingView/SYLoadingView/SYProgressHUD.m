@@ -16,10 +16,8 @@
     NSBundle *_syHUDBundle;
 }
 
-@property (nonatomic, readonly)UIWindow *frontWindow;
-@property (nonatomic, strong)UIView *backgroundView;
 
-@property (nonatomic, strong)UIVisualEffectView *hudView;
+@property (nonatomic, strong)UIView *backgroundView;
 @property (nonatomic, strong) UIView *indefiniteAnimatedView;
 
 
@@ -153,9 +151,7 @@ static SYProgressHUD* __shareView;
 }
 
 - (void)fadeOutAnimationAction{
-    
-    self.hudView.transform = CGAffineTransformScale(self.hudView.transform, 1/1.3f, 1/1.3f);
-    
+   
     self.hudView.effect = nil;
     self.hudView.backgroundColor = [UIColor clearColor];
     self.backgroundView.alpha = 0.0f;
@@ -183,6 +179,8 @@ static SYProgressHUD* __shareView;
 // 加载状态
 - (void)LoadingStatusUI{
     
+    self.hudView.transform = CGAffineTransformIdentity;
+    
     CGFloat maxHudWidth = 140;
     CGFloat maxHudHeight = 118;// 边距12 + 动画高度66 + 间距8 + 文本高度20 + 边距12
     
@@ -200,6 +198,8 @@ static SYProgressHUD* __shareView;
 
 // 成功状态
 - (void)successStatusUI{
+    
+    self.hudView.transform = CGAffineTransformIdentity;
     
     CGRect labelRect = CGRectZero;
     CGFloat labelHeight = 0.0f;
@@ -243,6 +243,8 @@ static SYProgressHUD* __shareView;
 // 错误状态
 - (void)errorStatusUI{
  
+    self.hudView.transform = CGAffineTransformIdentity;
+    
     CGRect labelRect = CGRectZero;
     CGFloat labelHeight = 0.0f;
     CGFloat labelWidth = 0.0f;
