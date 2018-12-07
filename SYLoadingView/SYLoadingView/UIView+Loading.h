@@ -22,16 +22,12 @@ typedef enum : NSUInteger {
 @interface UIView (Loading)
 
 
-// 透明挡板 需要手动执行消息
+// 背景透明
 + (void)showLoadingClearMask;
 
-// 白色挡板 一般用于进入新界面时数据，需要手动执行消息
+// 背景白色 一般用于进入新界面，无数据状态
 + (void)showLoadingWhiteMask;
 
-// 成功提示
-+ (void)dismissLoading;
-+ (void)dismissLoadingWithDelay:(NSTimeInterval)delay;
-+ (void)dismissLoadingWithDelay:(NSTimeInterval)delay complete:(SYHUDDismissCompletion)block;
 
 // 成功提示 会自动消失，默认一秒
 + (void)showSuceessMsg:(NSString*)msg;
@@ -40,5 +36,11 @@ typedef enum : NSUInteger {
 
 // 错误提示 会自动消失，默认2秒
 + (void)showErrorMsg:(NSString*)msg;
+
+
+//
++ (void)dismissLoading;
++ (void)dismissLoadingWithDelay:(NSTimeInterval)delay;
++ (void)dismissLoadingWithDelay:(NSTimeInterval)delay complete:(SYHUDDismissCompletion)block;
 
 @end
